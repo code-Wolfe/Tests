@@ -13,6 +13,8 @@ public class LambdaTest {
         list.add(2);
         list.add(6);
 
+
+
         ArrayList<Integer> values = list.stream()
                 .filter(value -> value > 5)
                 .map(value -> value * 2)
