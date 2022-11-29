@@ -23,11 +23,12 @@ public class StreamTest {
                 .count();
         //get average
         double average = inputs.stream()
-                .mapToInt(s -> Integer.valueOf(s))
+                .mapToInt(Integer::valueOf)
                 .average()
                 .getAsDouble();
 
         System.out.println("Divisible by three " + numbersDivisibleByThree);
         System.out.println("Average number: " + average);
+
     }
 }
